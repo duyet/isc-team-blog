@@ -11,8 +11,20 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://my-ghost-blog.com',
-        mail: {},
+        // The url to use when providing links to the site, E.g. in RSS and email.
+        url: 'http://blog.isc-team.xyz',
+
+        mail: {
+            transport: 'SMTP',
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: 'postmaster@sandbox4230273b35484ad6a2119caf74eef99f.mailgun.org', // mailgun username
+                    pass: 'e91672b422f102fdb2b44bf63460abc2' // mailgun password
+                }
+            }
+        },
+
         database: {
             client: 'sqlite3',
             connection: {
@@ -47,6 +59,17 @@ config = {
         //      }
         //  },
         // ```
+
+        mail: {
+            transport: 'SMTP',
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: 'postmaster@sandbox4230273b35484ad6a2119caf74eef99f.mailgun.org', // mailgun username
+                    pass: 'e91672b422f102fdb2b44bf63460abc2' // mailgun password
+                }
+            }
+        },
 
         // #### Database
         // Ghost supports sqlite3 (default), MySQL & PostgreSQL
@@ -99,11 +122,11 @@ config = {
         database: {
             client: 'mysql',
             connection: {
-                host     : '127.0.0.1',
-                user     : 'root',
-                password : '',
-                database : 'ghost_testing',
-                charset  : 'utf8'
+                host: '127.0.0.1',
+                user: 'root',
+                password: '',
+                database: 'ghost_testing',
+                charset: 'utf8'
             }
         },
         server: {
@@ -120,11 +143,11 @@ config = {
         database: {
             client: 'pg',
             connection: {
-                host     : '127.0.0.1',
-                user     : 'postgres',
-                password : '',
-                database : 'ghost_testing',
-                charset  : 'utf8'
+                host: '127.0.0.1',
+                user: 'postgres',
+                password: '',
+                database: 'ghost_testing',
+                charset: 'utf8'
             }
         },
         server: {
