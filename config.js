@@ -31,7 +31,7 @@ if (process.env.OPENSHIFT_MYSQL_DB_HOST != undefined) {
                 port: process.env.OPENSHIFT_NODEJS_PORT
             },
             paths: {
-                contentPath: path.join(__dirname, '/../data/')
+                contentPath: path.join(__dirname, '/content/')
             }
         }
     }
@@ -61,7 +61,7 @@ if (process.env.OPENSHIFT_MYSQL_DB_HOST != undefined) {
                 port: process.env.OPENSHIFT_NODEJS_PORT
             },
             paths: {
-                contentPath: path.join(__dirname, '/../data/')
+                contentPath: path.join(__dirname, '/content/')
             }
         }
     }
