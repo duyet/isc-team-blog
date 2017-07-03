@@ -16,7 +16,7 @@
   "bugs": "https://github.com/TryGhost/Ghost/issues",
   "contributors": "https://github.com/TryGhost/Ghost/graphs/contributors",
   "license": "MIT",
-  "main": "./core/index",
+  "main": "index.js",
   "scripts": {
     "start": "node index",
     "test": "grunt validate --verbose"
@@ -25,7 +25,6 @@
     "node": "~0.10.0 || ~0.12.0",
     "iojs": "~1.2.0"
   },
-  "main": "index.js",
   "dependencies": {
     "bcryptjs": "2.1.0",
     "bluebird": "2.9.27",
@@ -57,7 +56,7 @@
     "passport-http-bearer": "1.0.1",
     "passport-oauth2-client-password": "0.1.2",
     "path-match": "1.2.2",
-    "request": "2.57.0",
+    "request": "2.66.0",
     "rss": "1.1.1",
     "semver": "4.3.6",
     "showdown-ghost": "0.3.6",
