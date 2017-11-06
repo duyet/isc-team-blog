@@ -16,7 +16,7 @@
   "bugs": "https://github.com/TryGhost/Ghost/issues",
   "contributors": "https://github.com/TryGhost/Ghost/graphs/contributors",
   "license": "MIT",
-  "main": "./core/index",
+  "main": "index.js",
   "scripts": {
     "start": "node index",
     "test": "grunt validate --verbose"
@@ -25,7 +25,6 @@
     "node": "~0.10.0 || ~0.12.0",
     "iojs": "~1.2.0"
   },
-  "main": "index.js",
   "dependencies": {
     "bcryptjs": "2.1.0",
     "bluebird": "2.9.27",
@@ -40,7 +39,7 @@
     "downsize": "0.0.8",
     "express": "4.12.4",
     "express-hbs": "0.8.4",
-    "extract-zip": "1.0.3",
+    "extract-zip": "1.6.6",
     "fs-extra": "0.18.4",
     "glob": "4.3.2",
     "html-to-text": "1.3.0",
