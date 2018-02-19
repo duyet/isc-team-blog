@@ -16,7 +16,7 @@
   "bugs": "https://github.com/TryGhost/Ghost/issues",
   "contributors": "https://github.com/TryGhost/Ghost/graphs/contributors",
   "license": "MIT",
-  "main": "./core/index",
+  "main": "index.js",
   "scripts": {
     "start": "node index",
     "test": "grunt validate --verbose"
@@ -25,15 +25,14 @@
     "node": "~0.10.0 || ~0.12.0",
     "iojs": "~1.2.0"
   },
-  "main": "index.js",
   "dependencies": {
     "bcryptjs": "2.1.0",
     "bluebird": "2.9.27",
     "body-parser": "1.12.4",
-    "bookshelf": "0.7.9",
+    "bookshelf": "0.10.0",
     "busboy": "0.2.9",
     "chalk": "1.0.0",
-    "cheerio": "0.19.0",
+    "cheerio": "0.20.0",
     "compression": "1.4.4",
     "connect-slashes": "1.3.1",
     "cookie-session": "1.1.0",
@@ -46,8 +45,8 @@
     "html-to-text": "1.3.0",
     "intl": "1.0.0",
     "intl-messageformat": "1.1.0",
-    "knex": "0.7.3",
-    "lodash": "3.10.0",
+    "knex": "0.11.0",
+    "lodash": "4.17.5",
     "moment": "2.10.3",
     "morgan": "1.5.3",
     "node-uuid": "1.4.3",
@@ -57,13 +56,13 @@
     "passport-http-bearer": "1.0.1",
     "passport-oauth2-client-password": "0.1.2",
     "path-match": "1.2.2",
-    "request": "2.57.0",
+    "request": "2.82.0",
     "rss": "1.1.1",
     "semver": "4.3.6",
     "showdown-ghost": "0.3.6",
     "sqlite3": "3.0.8",
     "unidecode": "0.1.3",
-    "validator": "3.40.0",
+    "validator": "9.4.1",
     "xml": "1.0.0"
   },
   "optionalDependencies": {
