@@ -16,7 +16,7 @@
   "bugs": "https://github.com/TryGhost/Ghost/issues",
   "contributors": "https://github.com/TryGhost/Ghost/graphs/contributors",
   "license": "MIT",
-  "main": "./core/index",
+  "main": "index.js",
   "scripts": {
     "start": "node index",
     "test": "grunt validate --verbose"
@@ -25,7 +25,6 @@
     "node": "~0.10.0 || ~0.12.0",
     "iojs": "~1.2.0"
   },
-  "main": "index.js",
   "dependencies": {
     "bcryptjs": "2.1.0",
     "bluebird": "2.9.27",
@@ -61,7 +60,7 @@
     "rss": "1.1.1",
     "semver": "4.3.6",
     "showdown-ghost": "0.3.6",
-    "sqlite3": "3.0.8",
+    "sqlite3": "4.0.0",
     "unidecode": "0.1.3",
     "validator": "3.40.0",
     "xml": "1.0.0"
